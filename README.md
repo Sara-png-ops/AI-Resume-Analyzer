@@ -1,97 +1,62 @@
-# 🤖 AI Resume Analyzer
+# AI Resume Analyzer
 
-An AI-powered resume analysis web application built with **Python and Streamlit** that compares a candidate's resume with a job description, identifies matching and missing skills, and generates a resume match score.
+A Python-based web application that analyzes a resume against a given job description. It extracts skills from a PDF resume, compares them with the skills mentioned in the job description, and provides a match percentage along with missing and matching skills.
 
-## 🚀 Project Overview
+## Features
 
-Finding out whether a resume matches a particular job description can be time-consuming.
+* Upload a resume in PDF format
+* Paste a job description
+* Extract text from the resume
+* Detect technical skills
+* Compare resume skills with job requirements
+* Calculate a match percentage
+* Display matching and missing skills
+* Provide basic suggestions for improving the resume
 
-**AI Resume Analyzer** simplifies this process by allowing users to upload their resume as a PDF and paste a job description. The application analyzes both and provides an easy-to-understand compatibility report.
+## Technologies Used
 
-### ✨ Key Features
+* Python
+* Streamlit
+* PyPDF2
+* Regular Expressions
 
-* 📄 Upload PDF resumes
-* 💼 Enter a job description
-* 🔍 Automatically extract resume text
-* 🧠 Detect relevant technical skills
-* ✅ Identify matching skills
-* ❌ Identify missing skills
-* 📊 Calculate a resume-to-job match percentage
-* 💡 Provide personalized improvement suggestions
-* ⚡ Simple and interactive Streamlit interface
+## How It Works
 
-## 🛠️ Technologies Used
+The application follows a simple process:
 
-* **Python**
-* **Streamlit**
-* **PyPDF2**
-* **Regular Expressions**
-* **Keyword-based NLP techniques**
+1. The user uploads a PDF resume.
+2. The application extracts the text from the resume.
+3. Technical skills are identified from the resume.
+4. Skills are also identified from the job description.
+5. The two sets of skills are compared.
+6. A match percentage is calculated.
+7. Matching skills, missing skills, and suggestions are displayed.
 
-## ⚙️ How It Works
+## Match Score
 
-```text
-Resume PDF
-     ↓
-Text Extraction
-     ↓
-Skill Detection
-     ↓
-        ← Job Description
-              ↓
-        Skill Detection
-              ↓
-     Skill Comparison
-              ↓
-       Match Score
-              ↓
- Matching + Missing Skills
-              ↓
-    Improvement Suggestions
-```
-
-## 📊 Match Score
-
-The application calculates the percentage of job-description skills that are also found in the resume.
+The match score is calculated based on the number of job-related skills found in the resume.
 
 ```text
-Match Score =
-(Matching Skills / Job Description Skills) × 100
+Match Score = (Matching Skills / Job Description Skills) × 100
 ```
 
-The result is displayed as a percentage along with matching and missing skills.
+## Running the Project
 
-## 💻 Installation
-
-Clone this repository:
-
-```bash
-git clone https://github.com/YOUR-USERNAME/AI-Resume-Analyzer.git
-```
-
-Move into the project directory:
-
-```bash
-cd AI-Resume-Analyzer
-```
-
-Install the required dependencies:
+First, install the required libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## ▶️ Run the Application
-
-Start the Streamlit application:
+Then run the application:
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in your browser.
+The application will open in the browser.
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 AI-Resume-Analyzer/
@@ -100,33 +65,23 @@ AI-Resume-Analyzer/
 ├── requirements.txt
 ├── README.md
 └── screenshots/
-    └── resume-analyzer.png
 ```
 
-## 🎯 Example Use Case
+## Future Improvements
 
-A student or job seeker can:
+* Add semantic matching instead of basic keyword matching
+* Use AI/LLM-based resume analysis
+* Improve skill extraction
+* Add resume recommendations
+* Add charts and visual reports
+* Deploy the application online
 
-1. Upload their resume.
-2. Paste a software developer job description.
-3. Analyze the resume.
-4. View the overall match percentage.
-5. Identify skills already matching the position.
-6. Discover skills that may need to be highlighted or developed.
+## Author
 
-## 🔮 Future Improvements
+Sara Subhan
 
-* 🤖 Integrate an LLM for deeper resume analysis
-* 📌 Detect skills using semantic similarity instead of only keywords
-* 📝 Provide AI-generated resume improvement suggestions
-* 🎯 Support multiple job descriptions
-* 📈 Add visual analytics and skill charts
-* ☁️ Deploy the application online
-* 📑 Generate an automated resume analysis report
+B.Tech Computer Science & Engineering
 
-## 👩‍💻 Author
-
-**Sara Subhan**
 
 B.Tech Computer Science & Engineering Student
 
