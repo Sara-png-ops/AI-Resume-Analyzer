@@ -82,9 +82,4 @@ Sara Subhan
 
 B.Tech Computer Science & Engineering
 
-
-B.Tech Computer Science & Engineering Student
-
----
-
-⭐ If you found this project interesting, consider giving the repository a star!
+ If you found this project interesting, consider giving the repository a star!
