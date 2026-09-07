@@ -2,6 +2,10 @@
 
 A Python-based web application that analyzes a resume against a given job description. It extracts skills from a PDF resume, compares them with the skills mentioned in the job description, and provides a match percentage along with missing and matching skills.
 
+## Screenshot
+
+
+
 ## Features
 
 * Upload a resume in PDF format
