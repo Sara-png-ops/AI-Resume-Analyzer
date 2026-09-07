@@ -6,11 +6,11 @@ A Python-based web application that analyzes a resume against a job description.
 
 ### App Overview
 
-![App Overview](screenshots/app-overview.png)
+![App Overview](Screenshots/app-overview.png)
 
 ### Results Overview
 
-![Results Overview](screenshots/results-overview.png)
+![Results Overview](Screenshots/results-overview.png)
 
 ## Demo
 
@@ -100,7 +100,7 @@ AI-Resume-Analyzer/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── screenshots/
+└── Screenshots/
     ├── app-overview.png
     └── results-overview.png
 ```
